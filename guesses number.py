@@ -2,9 +2,9 @@ print("\nGuesses the answer between 1 to 100\n")
 
 number = 20
 
-trail = 1
+trail = 5
 
-while trail <= 5:
+while trail >= 0:
 
     x = int(input("Enter the number :- "))
 
@@ -16,7 +16,9 @@ while trail <= 5:
     else:
         print("Try again\n")
 
-    i = i + 1
+    trail = trail - 1
+
+    print("Chances left", trail)
 
 if trail > 5:
     print("[you loose]")
