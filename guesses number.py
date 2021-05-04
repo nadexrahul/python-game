@@ -5,16 +5,17 @@ number = 20
 trail = 5
 
 while trail >= 0:
-
-    x = int(input("Enter the number :- "))
-
-    if x == number:
-        print("\nYou guesses the right")
-        break
-    elif (x >= 15) and (x <= 19):
-        print("Closer\n")
-    else:
-        print("Try again\n")
+    try:
+        x = int(input("Enter the number :- "))
+        if x == number:
+            print("\nYou guesses the right")
+            break
+        elif (x >= 15) and (x <= 19):
+            print("Closer\n")
+        else:
+            print("Try again\n")
+    except ValueError:
+        print("\nInvalid input\n")
 
     trail = trail - 1
 
