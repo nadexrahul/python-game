@@ -63,4 +63,4 @@ elif user1 > pc1:
 elif pc1 > user1:
     print("\nPc won the match by {} points".format(pc1))
 
-n10 = input()
+n10 = input("Press any key to exit :- ")
